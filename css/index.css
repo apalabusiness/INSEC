@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+
+.navbar-brand {
+  font-family: "Staatliches", cursive;
+  font-size: 35px;
+}
+
+.font-time {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.font-Staatliches {
+  font-family: "Staatliches", cursive;
+}
+
+.font-germania {
+  font-family: "Germania One", cursive;
+  font-size: 38px;
+}
+
+#skill-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+nav {
+  min-height: 15vh;
+  z-index: 10;
+  position: fixed !important;
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav a {
+  color: white !important;
+  font-size: 28px;
+  font-family: "Staatliches", cursive;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width: 600px) {
+  #skills-section .row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px !important;
+  }
+
+  .row .card {
+    margin: 0px !important;
+  }
+}
