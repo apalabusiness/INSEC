@@ -82,4 +82,8 @@ nav a {
   .row .card {
     margin: 0px !important;
   }
+
+  .home-container h3 {
+    text-align: unset;
+  }
 }
