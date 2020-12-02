@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .navbar-brand {
   font-family: "Staatliches", cursive;
@@ -25,6 +26,16 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+  text-align: center;
 }
 
 nav {
@@ -72,6 +83,29 @@ nav a {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#service-container {
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  min-height: 85vh;
+  align-items: center;
+}
+
+.home-container .column1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container .column2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 30px !important;
+}
+
 @media only screen and (max-width: 600px) {
   #skills-section .row {
     display: flex;
@@ -85,5 +119,10 @@ nav a {
 
   .home-container h3 {
     text-align: unset;
+  }
+
+  .home-container img {
+    margin-top: 100px;
+    max-height: 50vh;
   }
 }
