@@ -33,10 +33,21 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+#about-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
 .card img {
   height: 100px;
   width: 100px;
   text-align: center;
+}
+
+.card:hover {
+  height: 110%;
+  width: 110%;
+  z-index: 10;
 }
 
 nav {
@@ -111,6 +122,12 @@ nav a {
   align-items: center;
 }
 
+#about-container {
+  padding-top: 15vh;
+  min-height: 100vh;
+  align-items: center;
+}
+
 #home-container .column1 {
   display: flex;
   align-items: center;
@@ -131,6 +148,12 @@ nav a {
     display: flex;
     flex-direction: row;
     padding: 10px !important;
+  }
+
+  .card:hover {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
   }
 
   .row .card {
