@@ -16,6 +16,10 @@
   font-family: "Staatliches", cursive;
 }
 
+.font-robota {
+  font-family: "Roboto", sans-serif;
+}
+
 .font-germania {
   font-family: "Germania One", cursive;
   font-size: 38px;
@@ -105,6 +109,12 @@ nav a {
   background-color: #fafafa;
 }
 
+#contact-container {
+  padding-top: 15vh;
+  min-height: 100vh;
+  align-items: center;
+}
+
 #work-container img {
   opacity: 0.7;
 }
@@ -156,8 +166,24 @@ nav a {
     z-index: 0;
   }
 
+  .follow {
+    display: flex;
+    flex-direction: column !important;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .follow a {
+    margin-bottom: 10px;
+  }
+
   .row .card {
     margin: 0px !important;
+  }
+
+  iframe {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   #home-container h3 {
