@@ -48,7 +48,7 @@ p {
   text-align: center;
 }
 
-.card:hover {
+#service-container .card:hover {
   height: 110%;
   width: 110%;
   z-index: 10;
