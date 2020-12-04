@@ -186,6 +186,10 @@ nav a {
     margin-bottom: 10px;
   }
 
+  #contact-container .contact {
+    font-size: 25px;
+  }
+
   #home-container h3 {
     text-align: unset;
   }
