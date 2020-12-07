@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
 
 .navbar-brand {
-  font-family: "Staatliches", cursive;
+  font-family: "Teko", sans-serif;
   font-size: 35px;
+}
+
+.font-teko {
+  font-family: "Teko", sans-serif;
 }
 
 .font-time {
@@ -68,7 +72,7 @@ nav {
 nav a {
   color: white !important;
   font-size: 28px;
-  font-family: "Staatliches", cursive;
+  font-family: "Teko", sans-serif;
 }
 
 .img-logo {
@@ -162,7 +166,8 @@ nav a {
 
   .follow {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -188,8 +193,18 @@ nav a {
     text-align: unset;
   }
 
+  #about-container .col-md-7 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #contact-container .col-md-5 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
   #home-container img {
     margin-top: 100px;
-    max-height: 50vh;
+    max-height: 35vh;
   }
 }
