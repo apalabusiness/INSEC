@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 .navbar-brand {
   font-family: "Teko", sans-serif;
@@ -25,8 +25,59 @@
 }
 
 .font-germania {
-  font-family: "Germania One", cursive;
-  font-size: 38px;
+  font-family: "Teko", sans-serif;
+  font-size: 42px;
+}
+
+/* Navbar */
+
+.tophead {
+  width: 100%;
+  height: 15vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu-lines {
+  font-size: 35px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.mySideNav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  background: #272634;
+  overflow-x: hidden;
+  height: 100vh !important ;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Teko", sans-serif;
+  transition: all 0.5s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.mySideNav ul li {
+  list-style: none;
+}
+
+.mySideNav ul li a {
+  color: white;
+  font-size: 30px;
 }
 
 #skill-section {
@@ -34,7 +85,7 @@
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+ background-color: #fdfaec;
 }
 
 p {
@@ -53,26 +104,9 @@ p {
 }
 
 #service-container .card:hover {
-  height: 110%;
-  width: 110%;
+  height: 103%;
+  width: 103%;
   z-index: 10;
-}
-
-nav {
-  min-height: 15vh;
-  margin-bottom: 15vh !important;
-  z-index: 10;
-  position: fixed !important;
-  width: 100%;
-  /* background: #0f2027; /* fallback for old browsers  */
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-}
-
-nav a {
-  color: white !important;
-  font-size: 28px;
-  font-family: "Teko", sans-serif;
 }
 
 .img-logo {
@@ -83,19 +117,23 @@ nav a {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: rgb(51, 43, 43);
+}
+
+#home-container::before {
+  content: "";
+  background-image: url(../images/cyberSecurity4.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+#home-container h3 {
+  font-size: 35px;
 }
 
 #work-container {
@@ -104,13 +142,14 @@ nav a {
   flex-direction: column;
   min-height: 85vh;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #fdfaec;
 }
 
 #contact-container {
   padding-top: 15vh;
   min-height: 100vh;
   align-items: center;
+  background-color: #fdfaec;
 }
 
 #work-container img {
@@ -136,21 +175,6 @@ nav a {
   align-items: center;
 }
 
-#home-container .column1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#home-container .column2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 30px !important;
-}
-
 @media only screen and (max-width: 600px) {
   #skills-section .row {
     display: flex;
@@ -170,6 +194,10 @@ nav a {
     justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  #logo {
+    display: none;
   }
 
   .follow a {
@@ -201,10 +229,5 @@ nav a {
   #contact-container .col-md-5 {
     padding-left: 15px !important;
     padding-right: 15px !important;
-  }
-
-  #home-container img {
-    margin-top: 100px;
-    max-height: 35vh;
   }
 }

@@ -74,54 +74,57 @@
 
 <body>
 
-    <!--/# Navbar -->
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <header>
+        <div class="tophead">
+            <div class="brand-logo">
+                <a class="navbar-brand" href="#"><img src="images/InSec Logo.png" alt="InSec Logo"
+                        class="img-fluid bg-white img-logo" style="height: 10vh"></a>
+            </div>
 
-        <a class="navbar-brand" href="#"><img src="images/InSec Logo.png" alt="InSec Logo"
-                class="img-fluid bg-white img-logo" style="height: 10vh"></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#home-container">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#work-container">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#service-container">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#skill-section">Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#about-container">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase mx-3" href="#contact-container">Contact</a>
-                </li>
-            </ul>
+            <div class="menu-lines">
+                <span class="menu-lines" id="openNav" onclick="openNav()">&#9776</span>
+            </div>
         </div>
+    </header>
+
+
+    <nav class="mySideNav" id="sideNav">
+
+        <a href="javascript:void(0)" onclick="closeNav()" class="btn  closebtn  btn-danger"> &times;</a>
+
+        <ul class="mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#home-container">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#work-container">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#service-container">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#skill-section">Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#about-container">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase mx-3" href="#contact-container">Contact</a>
+            </li>
+        </ul>
+
     </nav>
 
 
     <!-- /# Home Container -->
-    <main class="container-fluid text-white" id="home-container">
+    <main class="container-fluid" id="home-container">
 
-        <div class="row">
+        <div class="row mx-auto">
 
-            <div class="col-md-6 text-center column1">
-                <img src="images/webDevlopment.png" alt="Web Development" class="img-fluid">
-            </div>
-
-            <div class="col-md-6 column2">
-                <h1 class="font-teko text-uppercase mt-3 display-4">Internet & Security</h1>
-                <h3 class="mt-1 text-justify font-teko">We help people and brands to reach their goals by
+            <div class="offset-md-2 col-md-8 text-center column2">
+                <h1 class="font-Staatliches mt-3 display-3">Internet & Security</h1>
+                <h3 class="mt-3  font-teko">We help people and brands to reach their goals by
                     designing &
                     building
                     user-centric Website and mobile Applications.</h3>
@@ -176,10 +179,6 @@
                     <img src="images/Recipe App.png" alt="Recipe App" class="img-fluid">
                 </a>
             </section>
-
-
-
-
 
         </div>
     </main>
@@ -446,6 +445,20 @@
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
+    <script>
+
+        const openNav = () => {
+            document.getElementById("sideNav").style.width = "250px";
+            document.getElementById("sideNav").style.zIndex = "2";
+
+        }
+
+        const closeNav = () => {
+            document.getElementById("sideNav").style.width = "0px";
+        }
+
+    </script>
 
 </body>
 
