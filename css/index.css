@@ -85,7 +85,7 @@
   min-height: 90vh;
   display: flex;
   flex-direction: column;
- background-color: #fdfaec;
+  background-color: #fdfaec;
 }
 
 p {
@@ -196,10 +196,6 @@ p {
     padding-right: 0px;
   }
 
-  #logo {
-    display: none;
-  }
-
   .follow a {
     margin-bottom: 10px;
   }
@@ -219,6 +215,15 @@ p {
 
   #home-container h3 {
     text-align: unset;
+    font-size: 30px;
+  }
+
+  #home-container h1 {
+    font-size: 55px;
+  }
+
+  .column2 {
+    padding-top: 30px !important;
   }
 
   #about-container .col-md-7 {
