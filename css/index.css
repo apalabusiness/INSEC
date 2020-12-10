@@ -129,9 +129,8 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  background: rgba(133, 120, 120, 0.8);
+  background: rgba(78, 71, 71, 0.8);
 }
-
 
 #home-container h3 {
   font-size: 35px;
@@ -220,6 +219,14 @@ p {
 
   #contact-container .contact {
     font-size: 25px;
+  }
+
+  #home-container {
+    color: black;
+  }
+
+  #home-container .row {
+    background: rgba(133, 120, 120, 0.8);
   }
 
   #home-container h3 {
