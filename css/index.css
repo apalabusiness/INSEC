@@ -188,6 +188,14 @@ p {
     z-index: 0;
   }
 
+  .img-logo {
+    opacity: 1;
+  }
+
+  .tophead {
+    background-color: #fff;
+  }
+
   .follow {
     display: flex;
     flex-direction: row;
